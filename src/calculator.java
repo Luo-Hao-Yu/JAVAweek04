@@ -13,8 +13,8 @@ public class calculator {
         return a/b;
     }
     public static void main(String[] args) {
+        Scanner sca1 = new Scanner(System.in);
         while(true) {
-            Scanner sca1 = new Scanner(System.in);
             System.out.println("请输入第一个数：");
             float firstNum = sca1.nextFloat();
             System.out.println("请输入标点符号：");
@@ -31,11 +31,10 @@ public class calculator {
                 case "*":
                     System.out.println(multiply(firstNum, secondNum));
                     break;
-                case "/":
+                default:
                     System.out.println(divide(firstNum, secondNum));
                     break;
             }
-            sca1.close();
         }
     }
 
