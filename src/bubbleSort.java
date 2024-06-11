@@ -26,6 +26,9 @@ public class bubbleSort {
             int[] sort = bubble.sort(array);
             for (int num : sort) {
                 System.out.print(num + "\t");
+
+
+
             }
     }
 }
